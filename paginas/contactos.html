@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="shortcut icon" href="../multimedia/icono pan.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+<!--clase para foto de fondo-->
+
+<body id="foto">
+    <div class="grid-contactos">
+        <!--encabezado-->
+        <header class="encabezado">
+            <div>
+                <img src="../multimedia/panaderia.png" alt="logo" class="imagenLogo">
+            </div>
+            <div>
+                <nav class="navegacion">
+                    <!--barra de navegacion-->
+                    <ul>
+                        <li><a href="../index.html">Principal</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                    </ul>
+                </nav>
+                <!--titulo de la pagina-->
+                <h1 class="tituloPrincipal">Panaderia Sarmiento</h1>
+            </div>
+        </header>
+        <!--informacion principal-->
+        <main>
+            <section>
+                <h2>Podemos Ayudarte</h2>
+                <h1 class="italica">Contactanos</h1>
+                <p>
+                    Por favor completá el formulario para consultarnos sobre alguna inquietud que tengas
+                </p>
+            </section>
+            <!--formulario de contacto-->
+            <section>
+                <article>
+                    <form action="" class="margen1">
+
+                        <div class="margen1">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div class="margen1">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido">
+                        </div>
+                        <div class="margen1">
+                            <label for="telefono">telefono</label>
+                            <input type="tel" name="telefono">
+                        </div>
+                        <fieldset>
+                            <!-- seleccion de la area de texto y envio -->
+                            <legend>Deje su mensaje</legend>
+                            <textarea name="Mensaje" cols="30" rows="10"></textarea>
+                            <!-- escribir lo necesario para el contacto -->
+                            <input type="submit" value="enviar"><!-- envia todo -->
+                            <input type="reset" value="resetear"><!-- borra todo -->
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <!-- pie de pagina  -->
+        <footer class="centralizado">
+            <!--logos de redes sociales-->
+            <div>
+                <img class="redes" src="../multimedia/facebook2.png" alt="facebook">
+                <img class="redes" src="../multimedia/instagram2.png" alt="instagram">
+                <img class="redes" src="../multimedia/twitter2.png" alt="twitter">
+            </div>
+            <!--logo de whatsup -->
+            <div class="whatsapp">
+                <a href="https://www.whatsapp.com/?lang=es">
+                    <img src="../multimedia/whatsup3.png" alt="whatsapp"></a>
+            </div>
+            <div>
+                <p>2022 todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

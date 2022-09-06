@@ -1,0 +1,277 @@
+/* cambia la medida del rem 1 rem= 10px, para textos, fuentes */
+html {
+    font-size: 62, 5%;
+}
+/* ID para darle color de fondo al INDEX */
+#fondoIndex {
+    background-color: #fdc18485;
+}
+/* tamaño de la imagen del logo*/
+.imagenLogo {
+    width: 100px;
+    height: 100px;
+}
+
+/* display para darle al menu propiedad de linea */
+.navegacion ul li {
+    display: inline-block;
+    padding: 50px 50px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+/* clase para darle color, tamaño y posicionar el titulo */
+.tituloPrincipal {
+    color: rgba(0, 0, 0, 0.753);
+    border: dotted 1px brown;
+    margin: 5px 20px;
+    padding: 20px;
+    font-size: 4rem;
+}
+/* tamaño de la imagen central del index */
+.fotoIndex1 {
+    width: 650px;
+    height: 450px;
+
+}
+/* darle ancho o width y el alto o height */
+.fotoIndex2 {
+    width: 600px;
+    height: 450px;
+}
+
+
+            /* BOX MODELING */
+
+/* box modeling, elemento  para darle estilo*/
+.principal__titulo {
+    font-size: 4rem;
+    background-color: #fefce6b6;
+}
+
+/* darle un modificador especifico al estilo del bem */
+.principal__titulo--color {
+    color: brown;
+}
+
+/* box modeling */
+.margen {
+    margin: 20px 100px;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+/* estilos para pag contactos */
+/* CONTACTOS  */
+.margen1 {
+    margin: 20px 80px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* clase para el footer */
+.redes {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    border: 10px none;
+}
+
+/* clase para el logo del whatsapp */
+.whatsapp img {
+    width: 70px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+/* ID para el background de la pag nosotros */
+#fondoNosotros {
+    background-color: #fef695;
+}
+
+/* darle color a la fuente en el subtitulo pag nosotros */
+.azul {
+    color: blue;
+}
+
+/* seleccion de la fuente utilizada en los html */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*centralizados de textos o titulos*/
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*ID que me determina el color de fondo */
+#fondoAmarillo {
+    background-color: #fefce660;
+}
+
+/*ID que me determina con una foto el fondo de pagina contactos */
+
+#foto {
+    background-image: url(../multimedia/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* clase para tamaño de las fotos pag sucursales */
+.fotoSucursales {
+    width: 600px;
+    height: 500px;
+}
+
+.fotocolor {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* clase para darle color a los titulos de las tablas en aside en el index */
+.tituloAside {
+    color: red
+}
+
+/* para darle estilos a las listas*/
+ul {
+    list-style-type: none;
+}
+
+/*para darle estilos a las fuentes */
+
+.italica {
+    font-style: italic;
+}
+
+/*para darle peso a la fuente*/
+
+.peso {
+    font-weight: bold;
+}
+
+/* para darle tamaño a la fuente */
+
+.tamaño {
+    font-size: 2rem;
+}
+
+
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* sacar o poner subrayados en textos o titulos */
+a {
+    text-decoration: none;
+}
+
+                    /*  FLEXBOX  */
+
+/* FLEX para subdividir el main en index */
+.textoconfoto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* flex para los encabezados en las pag secundarias */
+.encabezado {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* flex en el main y aside del index */
+.index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*  FLEX en main  */
+.centralizado {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+                        /*  GRID  */
+
+/* GRID EN EL INDEX */
+
+.grid-index {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 1fr 0.5fr 0.3fr;
+}
+
+/* GRID EN PAG. PRODUCTOS */
+
+.grid-productos {
+    display: grid;
+    grid-template-rows: 0.4fr 2.5fr 0.3fr;
+}
+
+/* GRID EN PAG CONTACTOS */
+
+.grid-contactos {
+    display: grid;
+    grid-template-rows: 0.4fr 2.5Sfr 0.3fr;
+}
+
+/* GRID EN NOSOTROS */
+
+.grid-nosotros {
+    display: grid;
+    grid-template-rows:0.4fr 1.5fr 0.3fr;
+
+}
+
+/* GRID EN SUCURSALES */
+
+.grid-sucursales {
+    display: grid;
+    grid-template-rows: 0.4fr 2.5fr 0.3fr;
+}
+
+                /*  RESPONSIVE DESIGN */
+
+/* responsive en los HTML   para tablet*/
+
+@media screen and (max-width: 768px) {
+    .fotoIndex2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tamaño {
+        font-size: 1rem;
+    }
+}
+
+/* responsive en los HTML para smartphone y celulares */
+
+@media screen and (max-width: 500px) {
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+    }
+}
