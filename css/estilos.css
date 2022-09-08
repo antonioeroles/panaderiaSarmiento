@@ -2,10 +2,12 @@
 html {
     font-size: 62, 5%;
 }
+
 /* ID para darle color de fondo al INDEX */
 #fondoIndex {
     background-color: #fdc18485;
 }
+
 /* tamaño de la imagen del logo*/
 .imagenLogo {
     width: 100px;
@@ -19,6 +21,7 @@ html {
     font-weight: bolder;
     font-size: 2rem;
 }
+
 /* clase para darle color, tamaño y posicionar el titulo */
 .tituloPrincipal {
     color: rgba(0, 0, 0, 0.753);
@@ -27,20 +30,27 @@ html {
     padding: 20px;
     font-size: 4rem;
 }
+
 /* tamaño de la imagen central del index */
 .fotoIndex1 {
     width: 650px;
     height: 450px;
 
 }
+
 /* darle ancho o width y el alto o height */
 .fotoIndex2 {
     width: 600px;
     height: 450px;
 }
 
+.fotoNos img {
+    width: 600px;
+    height: 450px;
+}
 
-            /* BOX MODELING */
+
+/* BOX MODELING */
 
 /* box modeling, elemento  para darle estilo*/
 .principal__titulo {
@@ -59,6 +69,7 @@ html {
     padding: 20px;
     font-size: 3rem;
 }
+
 
 /* estilos para pag contactos */
 /* CONTACTOS  */
@@ -160,6 +171,7 @@ ul {
 
 .tamaño {
     font-size: 2rem;
+
 }
 
 
@@ -181,22 +193,26 @@ a {
     text-decoration: none;
 }
 
-                    /*  FLEXBOX  */
+/*  FLEXBOX  */
 
 /* FLEX para subdividir el main en index */
 .textoconfoto {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* flex para los encabezados en las pag secundarias */
 .encabezado {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* flex en el main y aside del index */
 .index {
     display: flex;
@@ -210,68 +226,327 @@ a {
 /*  FLEX en main  */
 .centralizado {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
-                        /*  GRID  */
+
+/*  GRID  */
 
 /* GRID EN EL INDEX */
 
 .grid-index {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 1fr 1fr 0.5fr 0.3fr;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+}
+
+.headerI {
+    grid-area: header;
+}
+
+.sectionI {
+    grid-area: section;
+}
+
+.mainI {
+    grid-area: main;
+}
+
+.asideI {
+    grid-area: aside;
+}
+
+.footerI {
+    grid-area: footer;
 }
 
 /* GRID EN PAG. PRODUCTOS */
 
 .grid-productos {
     display: grid;
-    grid-template-rows: 0.4fr 2.5fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+
+}
+
+.productoHeader {
+    grid-area: header;
+}
+
+.productoMain {
+    grid-area: main;
+}
+
+.productoFooter {
+    grid-area: footer;
 }
 
 /* GRID EN PAG CONTACTOS */
 
 .grid-contactos {
     display: grid;
-    grid-template-rows: 0.4fr 2.5Sfr 0.3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 0.3fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.headercont {
+    grid-area: header;
+}
+
+.maincont {
+    grid-area: main;
+}
+
+.footercont {
+    grid-area: footer;
 }
 
 /* GRID EN NOSOTROS */
 
 .grid-nosotros {
     display: grid;
-    grid-template-rows:0.4fr 1.5fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 0.3fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 
+}
+
+.header-nos {
+    grid-area: header;
+}
+
+.main-nos {
+    grid-area: main;
+}
+
+.footer-nos {
+    grid-area: footer;
 }
 
 /* GRID EN SUCURSALES */
 
 .grid-sucursales {
     display: grid;
-    grid-template-rows: 0.4fr 2.5fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
-                /*  RESPONSIVE DESIGN */
+.headerSucursal {
+    grid-area: header;
+}
+
+.mainSucursal {
+    grid-area: main;
+}
+
+.footerSucursal {
+    grid-area: footer;
+}
+
+/*  RESPONSIVE DESIGN */
 
 /* responsive en los HTML   para tablet*/
 
 @media screen and (max-width: 768px) {
-    .fotoIndex2 {
-        width: 300px;
-        height: 300px;
+    .grid-index {
+        grid-template-rows: 0.2fr 0.5fr 1fr 0.3fr 0.2fr;
     }
 
-    .tamaño {
-        font-size: 1rem;
+    .textoconfoto {
+        flex-wrap: wrap;
+    }
+
+    .fotoNos {
+        margin: 0px 30px;
+    }
+
+    .rebelde {
+        display: none;
+    }
+
+    .grid-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.3fr;
+        grid-template-areas:
+            "header header"
+            "section section"
+            "main main"
+            "aside aside"
+            "footer footer";
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.3fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .grid-nosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.3fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .grid-sucursales {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.3fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
     }
 }
 
 /* responsive en los HTML para smartphone y celulares */
 
 @media screen and (max-width: 500px) {
-    .navegacion {
+    .navegacion ul li {
         display: flex;
         flex-direction: column;
+        font-size: 1rem;
     }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .tamaño {
+        font-size: 0.9rem;
+    }
+
+    .principal__titulo {
+        font-size: 1.5rem
+    }
+
+    .margen {
+        font-size: 1.5rem;
+    }
+
+    .fotoIndex1 {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .fotoIndex2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .fotoNos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fotoSucursales {
+        width: 100%;
+        height: auto;
+    }
+
+    .rebelde {
+        display: none;
+    }
+
+    .textoconfoto {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .index {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .centralizado {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .margen1 {
+        margin: 10px 20px;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+
+    .grid-index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5f 0.3fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "section"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .grid-contactos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .grid-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .grid-sucursales {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
 }
