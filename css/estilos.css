@@ -5,14 +5,29 @@ html {
 
 /* ID para darle color de fondo al INDEX */
 #fondoIndex {
-    background-color: #fdc18485;
+    background-color: rgb(223, 187, 133);
 }
+
+#fondoSucursales {
+    background: linear-gradient(rgb(215, 159, 100), #9b965760);
+}
+
 
 /* tamaño de la imagen del logo*/
 .imagenLogo {
     width: 100px;
     height: 100px;
+    filter: contrast(60%);
+    transition: all 5s;
+
 }
+
+.imagenLogo:hover {
+    width: 150px;
+    height: 150px;
+    filter: none;
+}
+
 
 /* display para darle al menu propiedad de linea */
 .navegacion ul li {
@@ -500,6 +515,11 @@ a {
         margin: 10px 20px;
         padding: 10px;
         font-size: 0.7rem;
+    }
+
+    .fotocolor {
+        margin: 10px;
+        padding: 5px;
     }
 
     .grid-index {
