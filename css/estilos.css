@@ -7,6 +7,9 @@ html {
 #fondoIndex {
     background-color: rgb(223, 187, 133);
 }
+.bg-light{
+    background-color:rgb(223, 187, 133) !important;
+}
 
 #fondoSucursales {
     background: linear-gradient(rgb(215, 159, 100), #9b965760);
@@ -46,18 +49,6 @@ html {
     font-size: 4rem;
 }
 
-/* tamaño de la imagen central del index */
-.fotoIndex1 {
-    width: 650px;
-    height: 450px;
-
-}
-
-/* darle ancho o width y el alto o height */
-.fotoIndex2 {
-    width: 600px;
-    height: 450px;
-}
 
 .fotoNos img {
     width: 600px;
@@ -116,6 +107,9 @@ html {
 /* ID para el background de la pag nosotros */
 #fondoNosotros {
     background-color: #fef695;
+}
+.bg-lightNos{
+    background-color:#fef695 !important ;
 }
 
 /* darle color a la fuente en el subtitulo pag nosotros */
@@ -210,14 +204,6 @@ a {
 
 /*  FLEXBOX  */
 
-/* FLEX para subdividir el main en index */
-.textoconfoto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 /* flex para los encabezados en las pag secundarias */
 .encabezado {
@@ -249,7 +235,7 @@ a {
 
 /*  GRID  */
 
-/* GRID EN EL INDEX */
+/* GRID EN EL INDEX 
 
 .grid-index {
     display: grid;
@@ -281,7 +267,7 @@ a {
 
 .footerI {
     grid-area: footer;
-}
+} */
 
 /* GRID EN PAG. PRODUCTOS */
 
@@ -332,7 +318,7 @@ a {
     grid-area: footer;
 }
 
-/* GRID EN NOSOTROS */
+/* GRID EN NOSOTROS 
 
 .grid-nosotros {
     display: grid;
@@ -355,7 +341,7 @@ a {
 
 .footer-nos {
     grid-area: footer;
-}
+} */
 
 /* GRID EN SUCURSALES */
 
