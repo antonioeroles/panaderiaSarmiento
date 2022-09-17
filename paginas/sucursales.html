@@ -5,52 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- NOMBRE EN LA PESTAÑA -->
+
     <title>Sucursales</title>
+
+        <!--FAVICON  IMAGEN DE LA PESTAÑA EN EL NAVEGADOR-->
+
     <link rel="shortcut icon" href="../multimedia/icono pan.ico" type="image/x-icon">
-    <!--favicon-->
+    
+        <!--FUENTE UTILIZADA-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+
+         <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!--ESTILOS CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
 
 <body id="fondoSucursales">
-    <div class="grid-sucursales">
-        <!--encabezado-->
-        <header class="headerSucursal">
-            <div class="encabezado">
-                <div>
-                    <img src="../multimedia/panaderia.png" alt="logo" class="imagenLogo">
+    <div class="container-fluid">
+            <!--Barra de Navegacion-->
+    
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../multimedia/panaderia.png" class="imagenLogo" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse navegacion" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+            </nav>
+        <header>
                 <div>
-                    <nav class="navegacion">
-                        <!--barra de navegacion-->
-                        <ul>
-                            <li><a href="../index.html">Principal</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="productos.html">Productos</a></li>
-                            <Li><a href="contactos.html">Contactos</a></Li>
-                        </ul>
-                    </nav>
                     <h1 class="tituloPrincipal">Panaderia Sarmiento</h1>
                 </div>
-            </div>
         </header>
+
         <!--informacion principal-->
-        <main class="mainSucursal">
+
+        <main>
             <section>
 
                 <div class="fotocolor">
-                    <img src="../multimedia/cocina.jpg" alt="cocina" class="fotoSucursales">
-                    <img src="../multimedia/vigilantes.jpg" alt="" class="fotoSucursales">
+                    <img src="../multimedia/cocina.jpg" alt="cocina" class="img-fluid mb-5">
+                    <img src="../multimedia/vigilantes.jpg" alt="" class="img-fluid mb-5">
                 </div>
             </section>
-            <section>
-                <div>
+            <section class="container-fluid">
+                <div class="mt-5 mb-5">
                     <h2 class="h2">Donde Encontrarnos</h2>
                 </div>
                 <div class="tamaño">
@@ -85,12 +111,14 @@
             <article>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.607164267918!2d-64.1836021!3d-31.4168318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1660750641103!5m2!1ses-419!2sar"
-                    width="90%" height="auto" style="border: 10px;" allowfullscreen="" loading="lazy"
+                    width="100%" height="450" style="border: 10px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </main>
-        <!--footer-->
-        <footer class="footerSucursal">
+
+            <!--footer-->
+        <footer>
+
             <div class="centralizado">
                 <!--logo redes sociales-->
                 <div>
@@ -104,11 +132,15 @@
                         <img src="../multimedia/whatsup3.png" alt="whatsapp"></a>
                 </div>
                 <div>
-                    <p>2022 todos los derechos reservados</p>
+                    <h5>seguinos en todas nuestras redes</h5>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- JavaScript para bootstraps  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
