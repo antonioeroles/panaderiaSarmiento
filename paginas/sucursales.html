@@ -41,18 +41,18 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse navegacion" id="navbarNav">
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
+                      <li class="nav-item mx-3">
+                        <a class="nav-link" href="../index.html">Principal</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item mx-3">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item mx-3">
                         <a class="nav-link" href="productos.html">Productos</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item mx-3">
                         <a class="nav-link" href="contactos.html">Contactos</a>
                       </li>
                     </ul>
@@ -60,20 +60,36 @@
                 </div>
             </nav>
         <header>
-                <div>
+                <div class="mb-5">
                     <h1 class="tituloPrincipal">Panaderia Sarmiento</h1>
                 </div>
         </header>
 
         <!--informacion principal-->
 
-        <main>
+        <main class="container-fluid">
             <section>
-
-                <div class="fotocolor">
-                    <img src="../multimedia/cocina.jpg" alt="cocina" class="img-fluid mb-5">
-                    <img src="../multimedia/vigilantes.jpg" alt="" class="img-fluid mb-5">
-                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../multimedia/vendedora.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../multimedia/medialunas.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../multimedia/foto sucursales.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
             <section class="container-fluid">
                 <div class="mt-5 mb-5">
@@ -103,7 +119,7 @@
                     </table>
                 </div>
                 <div>
-                    <h4>Te invitamos a conocernos</h4>
+                    <h4 class="tamaño mt-5 mb-5">Te invitamos a conocernos</h4>
                 </div>
             </section>
 

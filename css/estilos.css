@@ -15,6 +15,14 @@ html {
     background: linear-gradient(rgb(223, 187, 133), #64612f60);
 }
 
+.nav-link{
+    color: blue;
+    font-size: 2rem;
+}
+.nav-link active{
+    color: blue;
+}
+
 
 /* tamaño de la imagen del logo*/
 .imagenLogo {
@@ -221,11 +229,6 @@ a {
 /* responsive en los HTML para smartphone y celulares */
 
 @media screen and (max-width: 500px) {
-    .navegacion ul li {
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-    }
 
     .h2 {
         font-size: 1.5rem;
