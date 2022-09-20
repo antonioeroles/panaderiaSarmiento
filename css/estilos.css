@@ -237,6 +237,9 @@ a {
     .tamaño {
         font-size: 0.9rem;
     }
+    .tituloPrincipal{
+        font-size: 3rem;
+    }
 
     .principal__titulo {
         font-size: 1.5rem
