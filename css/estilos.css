@@ -1,6 +1,5 @@
-/* cambia la medida del rem 1 rem= 10px, para textos, fuentes */
-html {
-    font-size: 62, 5%;
+html{
+    font-size: 62,5%;
 }
 
 /* ID para darle color de fondo al INDEX */
@@ -185,8 +184,6 @@ ul {
 
 }
 
-
-
 h2 {
     font-size: 3rem;
 }
@@ -214,12 +211,10 @@ a {
     align-items: center;
 }
 
-
-
-
-/*  RESPONSIVE DESIGN */
+    /*  RESPONSIVE DESIGN */
 
 /* responsive en los HTML   para tablet*/
+
 @media screen and (max-width:768px) {
     .rebelde{display: none;}
     

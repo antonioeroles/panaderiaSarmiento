@@ -1,0 +1,86 @@
+ /*  RESPONSIVE DESIGN */
+
+/* responsive en los HTML   para tablet*/
+
+@media screen and (max-width:768px) {
+    .rebelde{display: none;}
+    
+}
+
+/* responsive en los HTML para smartphone y celulares */
+
+@media screen and (max-width: 500px) {
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .tamaño {
+        font-size: 0.9rem;
+    }
+    .tituloPrincipal{
+        font-size: 3rem;
+    }
+    .principal__titulo {
+        font-size: 1.5rem
+    }
+
+    .margen {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    .fotoIndex1 {
+        width: 100%;
+        height: auto;
+
+    }
+    .fotoIndex2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .fotoNos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fotoSucursales {
+        width: 100%;
+        height: auto;
+    }
+
+    .rebelde {
+        display: none;
+    }
+
+    .textoconfoto {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .index {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .centralizado {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .margen1 {
+        margin: 10px 20px;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+
+    .fotocolor {
+        margin: 10px;
+        padding: 5px;
+    }
+}

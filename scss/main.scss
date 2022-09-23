@@ -1,0 +1,171 @@
+html{
+    font-size: 62,5%;
+}
+@import "background";
+
+.nav-link{
+    color: blue;
+    font-size: 2rem;
+    active{
+        color: blue;
+    }
+}
+/*centralizados de textos o titulos*/
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* tamaño de la imagen del logo*/
+.imagenLogo {
+    width: 100px;
+    height: 100px;
+    filter: contrast(60%);
+    transition: all 5s;
+    &:hover{
+        width: 150px;
+        height: 150px;
+        filter: none;
+    }
+
+}
+
+/* clase para darle color, tamaño y posicionar el titulo */
+.tituloPrincipal {
+    color: rgba(0, 0, 0, 0.753);
+    border: dotted 1px brown;
+    margin: 5px 20px;
+    padding: 20px;
+    font-size: 4rem;
+}
+
+/* BOX MODELING */
+
+/* box modeling, elemento  para darle estilo*/
+.principal__titulo {
+    font-size: 4rem;
+    background-color: #fefce6b6;
+}
+
+/* darle un modificador especifico al estilo del bem */
+.principal__titulo--color {
+    color: brown;
+}
+/* box modeling */
+.margen {
+    margin: 20px 100px;
+    padding: 20px;
+    font-size: 3rem;
+}
+ol{
+    list-style: square;
+    list-style-position: inside;
+}
+
+/* estilos para pag contactos */
+
+/* CONTACTOS  */
+
+.margen1 {
+    margin: 20px 80px;
+    padding: 20px;
+    font-size: 1rem;
+    
+}
+
+/* clase para el footer */
+.redes {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    border: 10px none;
+}
+
+/* clase para el logo del whatsapp */
+
+.whatsapp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    img{
+        width: 70px;
+    }
+}
+
+/* darle color a la fuente en el subtitulo pag nosotros */
+.azul {
+    color: blue;
+}
+
+/* seleccion de la fuente utilizada en los html */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* clase para tamaño de las fotos pag sucursales */
+.fotoSucursales {
+    width: 600px;
+    height: 500px;
+}
+
+.fotocolor {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* clase para darle color a los titulos de las tablas en aside en el index */
+.tituloAside {
+    color: red
+}
+
+/* para darle estilos a las listas*/
+ul {
+    list-style-type: none;
+}
+
+/*para darle estilos a las fuentes */
+
+.italica {
+    font-style: italic;
+}
+
+/*para darle peso a la fuente*/
+
+.peso {
+    font-weight: bold;
+}
+
+/* para darle tamaño a la fuente */
+
+.tamaño {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* sacar o poner subrayados en textos o titulos */
+a {
+    text-decoration: none;
+}
+
+/*  FLEX en main  */
+
+.centralizado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+@import "mediaqueries";
+

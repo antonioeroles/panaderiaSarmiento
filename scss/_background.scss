@@ -1,0 +1,34 @@
+/* ID para darle color de fondo al INDEX */
+#fondoIndex {
+    background-color: rgb(223, 187, 133);
+}
+.bg-light{
+    background-color:rgb(223, 187, 133) !important;
+}
+
+#fondoSucursales {
+    background: linear-gradient(rgb(223, 187, 133), #64612f60);
+}
+/* ID para el background de la pag nosotros */
+#fondoNosotros {
+    background-color: #fef695;
+}
+.bg-lightNos{
+    background-color:#fef695 !important ;
+}
+/*ID que me determina el color de fondo */
+#fondoAmarillo {
+    background-color: #fefce660;
+}
+
+/*ID que me determina con una foto el fondo de pagina contactos */
+
+#foto {
+    background-image: url(../multimedia/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-lightContacto{
+    background-image:url(../multimedia/fondo2.jpg) !important ;
+}
