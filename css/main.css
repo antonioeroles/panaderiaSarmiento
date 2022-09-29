@@ -2,6 +2,22 @@
 html {
   font-size: 62,5%; }
 
+/* MIXIN */
+/* EXTEND */
+.parrafos, .parrafos_productos, .parrafos_sucursales {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: normal;
+  margin: 10px;
+  padding: 10px; }
+
+.parrafos_productos {
+  color: brown; }
+
+.parrafos_sucursales {
+  text-align: center; }
+
 /* ID para darle color de fondo al INDEX */
 #fondoIndex {
   background-color: #dfbb85; }
@@ -57,7 +73,7 @@ header h1 {
 
 /* clase para darle color, tamaño y posicionar el titulo */
 .tituloPrincipal {
-  color: rgba(0, 0, 0, 0.753);
+  color: black;
   border: dotted 1px brown;
   margin: 5px 20px;
   padding: 20px;
@@ -68,10 +84,8 @@ header h1 {
 .principal__titulo {
   font-size: 4rem;
   background-color: #fefce6b6; }
-
-/* darle un modificador especifico al estilo del bem */
-.principal__titulo--color {
-  color: brown; }
+  .principal__titulo--color {
+    color: brown; }
 
 /* box modeling */
 .margen {
@@ -112,11 +126,6 @@ ol {
 /* seleccion de la fuente utilizada en los html */
 body {
   font-family: 'Open Sans', sans-serif; }
-
-/* clase para tamaño de las fotos pag sucursales */
-.fotoSucursales {
-  width: 600px;
-  height: 500px; }
 
 .fotocolor {
   margin: 20px;
@@ -189,9 +198,6 @@ a {
     width: 100%;
     height: auto; }
   .fotoNos img {
-    width: 100%;
-    height: auto; }
-  .fotoSucursales {
     width: 100%;
     height: auto; }
   .rebelde {

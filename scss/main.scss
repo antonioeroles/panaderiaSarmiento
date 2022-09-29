@@ -1,18 +1,19 @@
 html{
     font-size: 62,5%;
 }
+@import "variables";
 @import "background";
 
 .nav-link{
-    color: blue;
-    font-size: 2rem;
+    color:$azul;
+    font-size: map-get($estilos, font-size);
     active{
-        color: blue;
+        color: $azul;
     }
 }
 /*centralizados de textos o titulos*/
 header h1 {
-    text-align: center;
+    text-align:map-get($estilos, alineacion );
     font-size: 3rem;
 }
 
@@ -32,10 +33,10 @@ header h1 {
 
 /* clase para darle color, tamaño y posicionar el titulo */
 .tituloPrincipal {
-    color: rgba(0, 0, 0, 0.753);
-    border: dotted 1px brown;
+    color:$negro;
+    border: dotted 1px $marron;
     margin: 5px 20px;
-    padding: 20px;
+    padding: map-get($estilos, padding);
     font-size: 4rem;
 }
 
@@ -44,19 +45,20 @@ header h1 {
 /* box modeling, elemento  para darle estilo*/
 .principal__titulo {
     font-size: 4rem;
-    background-color: #fefce6b6;
+    background-color: $background5;
+    &--color{color: $marron;}
 }
 
-/* darle un modificador especifico al estilo del bem */
-.principal__titulo--color {
-    color: brown;
-}
+
 /* box modeling */
 .margen {
-    margin: 20px 100px;
-    padding: 20px;
+    margin: map-get($estilos, margen) 100px;
+    padding: map-get($estilos, padding);
     font-size: 3rem;
 }
+
+
+
 ol{
     list-style: square;
     list-style-position: inside;
@@ -67,8 +69,8 @@ ol{
 /* CONTACTOS  */
 
 .margen1 {
-    margin: 20px 80px;
-    padding: 20px;
+    margin: map-get($estilos, margen) 80px;
+    padding: map-get($estilos, padding);
     font-size: 1rem;
     
 }
@@ -94,7 +96,7 @@ ol{
 
 /* darle color a la fuente en el subtitulo pag nosotros */
 .azul {
-    color: blue;
+    color: $azul;
 }
 
 /* seleccion de la fuente utilizada en los html */
@@ -102,20 +104,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* clase para tamaño de las fotos pag sucursales */
-.fotoSucursales {
-    width: 600px;
-    height: 500px;
-}
 
 .fotocolor {
-    margin: 20px;
+    margin: map-get($estilos, margen);
     padding: 10px;
 }
 
 /* clase para darle color a los titulos de las tablas en aside en el index */
 .tituloAside {
-    color: red
+    color: $rojo;
 }
 
 /* para darle estilos a las listas*/
@@ -138,7 +135,7 @@ ul {
 /* para darle tamaño a la fuente */
 
 .tamaño {
-    font-size: 2rem;
+    font-size: map-get($estilos, font-size);
 }
 
 h2 {
@@ -146,7 +143,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: map-get($estilos, font-size);
 }
 
 h4 {
@@ -158,14 +155,10 @@ a {
     text-decoration: none;
 }
 
-/*  FLEX en main  */
+   /*  FLEX en main  */
 
 .centralizado {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+   @include flex;
 }
 @import "mediaqueries";
 

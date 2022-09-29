@@ -1,9 +1,9 @@
 /* ID para darle color de fondo al INDEX */
 #fondoIndex {
-    background-color: rgb(223, 187, 133);
+    background-color:$background1;
 }
 .bg-light{
-    background-color:rgb(223, 187, 133) !important;
+    background-color:$background1 !important;
 }
 
 #fondoSucursales {
@@ -11,14 +11,14 @@
 }
 /* ID para el background de la pag nosotros */
 #fondoNosotros {
-    background-color: #fef695;
+    background-color: $background3;
 }
 .bg-lightNos{
-    background-color:#fef695 !important ;
+    background-color:$background3 !important ;
 }
 /*ID que me determina el color de fondo */
 #fondoAmarillo {
-    background-color: #fefce660;
+    background-color: $background4;
 }
 
 /*ID que me determina con una foto el fondo de pagina contactos */

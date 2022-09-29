@@ -1,0 +1,19 @@
+﻿Proyecto inicial Antonio Eroles
+Panadería Sarmiento
+
+
+1.        Se agregó meta keywords en index y todas las paginas
+
+
+2.        Se agregó meta description a todas las paginas incluida index
+ 
+3.        Se creo un mixin con flex utilizado en  todas las paginas
+
+
+4.        Se creo un extend para los parrafos de las paginas
+
+
+5.        Se creo una pag de variables 
+
+
+6.        Se generó un map-get con estilos usados en distintas clases

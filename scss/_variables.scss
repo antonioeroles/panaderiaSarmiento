@@ -1,0 +1,46 @@
+
+
+
+$background1:rgb(223, 187, 133);
+$background2:#64612f60;
+$background3:#fef695;
+$background4:#fefce660;
+$background5:#fefce6b6;
+$marron:brown;
+$rojo:red;
+$azul:blue;
+$negro:black;
+
+$estilos:(
+    padding: 20px,
+    alineacion:center,
+    font-size: 2rem,
+    margen: 20px
+);
+ /* MIXIN */
+
+ @mixin flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+/* EXTEND */
+.parrafos{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: normal;
+    margin: 10px;
+    padding: 10px;
+}
+.parrafos_productos{
+    @extend .parrafos;
+    color: brown;
+}
+.parrafos_sucursales{
+    @extend .parrafos;
+    text-align: center;
+}
