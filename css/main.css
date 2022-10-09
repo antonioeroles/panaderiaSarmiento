@@ -41,16 +41,13 @@ html {
 
 /*ID que me determina con una foto el fondo de pagina contactos */
 #foto {
-  background-image: url(../multimedia/fondo2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-color: #fef695; }
 
 .bg-lightContacto {
-  background-image: url(../multimedia/fondo2.jpg) !important; }
+  background-color: #fef695 !important; }
 
 .nav-link {
-  color: blue;
+  color: brown;
   font-size: 2rem; }
   .nav-link active {
     color: blue; }
@@ -63,13 +60,7 @@ header h1 {
 /* tamaño de la imagen del logo*/
 .imagenLogo {
   width: 100px;
-  height: 100px;
-  filter: contrast(60%);
-  transition: all 5s; }
-  .imagenLogo:hover {
-    width: 150px;
-    height: 150px;
-    filter: none; }
+  height: 100px; }
 
 /* clase para darle color, tamaño y posicionar el titulo */
 .tituloPrincipal {
@@ -82,7 +73,7 @@ header h1 {
 /* BOX MODELING */
 /* box modeling, elemento  para darle estilo*/
 .principal__titulo {
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #fefce6b6; }
   .principal__titulo--color {
     color: brown; }

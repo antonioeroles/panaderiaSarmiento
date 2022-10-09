@@ -5,7 +5,7 @@ html{
 @import "background";
 
 .nav-link{
-    color:$azul;
+    color:$marron;
     font-size: map-get($estilos, font-size);
     active{
         color: $azul;
@@ -21,13 +21,7 @@ header h1 {
 .imagenLogo {
     width: 100px;
     height: 100px;
-    filter: contrast(60%);
-    transition: all 5s;
-    &:hover{
-        width: 150px;
-        height: 150px;
-        filter: none;
-    }
+   
 
 }
 
@@ -44,7 +38,7 @@ header h1 {
 
 /* box modeling, elemento  para darle estilo*/
 .principal__titulo {
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: $background5;
     &--color{color: $marron;}
 }

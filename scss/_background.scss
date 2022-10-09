@@ -24,11 +24,8 @@
 /*ID que me determina con una foto el fondo de pagina contactos */
 
 #foto {
-    background-image: url(../multimedia/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   background-color:$background3 ;
 }
 .bg-lightContacto{
-    background-image:url(../multimedia/fondo2.jpg) !important ;
+    background-color: $background3 !important ;
 }
